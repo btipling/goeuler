@@ -76,6 +76,7 @@ func findPrimeFactors(num, ceil *big.Int) {
 	if ok {
 		addToPrimeFactors(two)
 		findPrimeFactors(quotient, ceil)
+		return
 	}
 	head := NewNode(big.NewInt(3))
 	current = head
