@@ -13,7 +13,6 @@ package main
 */
 
 const primeProduct uint64 = 2 * 3 * 5 * 7 * 11 * 13 * 17 * 19
-
 var nonPrimes = []uint64{4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20}
 
 func main() {
