@@ -3,6 +3,7 @@ package main
 import (
 	"math"
 )
+
 /*
 
 	Problem:
@@ -25,7 +26,6 @@ import (
 
 const LIMIT uint64 = 100
 
-
 func main() {
 	sumOfSquares := uint64(0)
 	sum := uint64(0)
@@ -36,4 +36,3 @@ func main() {
 	squareOfSums := uint64(math.Pow(float64(sum), 2))
 	println("The answer is: ", (squareOfSums - sumOfSquares))
 }
-
