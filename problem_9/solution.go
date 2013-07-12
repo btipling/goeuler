@@ -15,9 +15,23 @@ package main
 
 */
 
-const LIMIT int = 1000
+const LIMIT uint64 = 1000
 
 func main() {
-	answer := "nfi"
+	answer := uint64(0)
+	found := false
+	for b := uint64(2); b < LIMIT; b++ {
+		if found {
+			break
+		}
+		for a := uint64(1); a < b; a++ {
+			c := 1000 - (a + b)
+			if (a*a)+(b*b) == (c * c) {
+				answer = a * b * c
+				found = true
+				break
+			}
+		}
+	}
 	println("The answer is: ", answer)
 }
